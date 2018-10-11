@@ -8,4 +8,6 @@ Jenkins plugins:
 
 ### Step-1 
 -- setup webhook in github first
+   URL: set the url of jenkins which will be something like given bellow:
+      http://<jenkin-server-ip>:<port>/github-webhook/
 
