@@ -4,4 +4,8 @@ Here we will trigger the jenkins job only when the changes are merged into TEST 
 
 ####Prerequisite:
 Jenkins plugins:
-    1. GitHub Plugin
+    1. Not required
+
+### Step-1 
+-- setup webhook in github first
+
