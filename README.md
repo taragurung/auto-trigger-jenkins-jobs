@@ -18,9 +18,3 @@ create your own personal API tokens
    URL: set the url of jenkins which will be something like given bellow:
       http://<jenkin-server-ip>:<port>/github-webhook/
 --
-    
- 
-    
-
-    
-
