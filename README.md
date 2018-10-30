@@ -12,7 +12,6 @@ You have to create a token on github and then use "Secret Text" and not "Usernam
 This is the url to create the secret key: 
 create your own personal API tokens 
 
-
 ### Step-1 
 -- setup webhook in github first, which is available in settings
    URL: set the url of jenkins which will be something like given bellow:
