@@ -29,5 +29,6 @@ Check the image for the normal setup done.
 ## Some important variables to access from jenkins
 Once the hook start working than we can start accessing so many cool variables directly from the jenkins environment. Few of my favorites being.
 
-**GIT_COMMITTER_NAME:** To know who made the commit, but it won't display if not set 
+**GIT_COMMITTER_NAME:** To know who made the commit 
+
 **GIT_COMMIT:** To know what was the exact commit being made
