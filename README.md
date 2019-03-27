@@ -32,3 +32,5 @@ Once the hook start working than we can start accessing so many cool variables d
 **GIT_COMMITTER_NAME:** To know who made the commit 
 
 **GIT_COMMIT:** To know what was the exact commit being made
+
+## Getting some more details from the Payload
