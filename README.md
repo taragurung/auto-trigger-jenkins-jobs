@@ -6,7 +6,7 @@ Here we will trigger the jenkins job only when the changes are merged into TEST 
 Jenkins plugins:
     1. Not required
     
-### setting up to be done in git 
+### setting up to be done in git to get the credentials
 You have to create a token on github and then use "Secret Text" and not "Username with password" when creating your login in Jenkins. There is a section called github in >>setting>global settings in jenkins. 
 
 This is the url to create the secret key: 
@@ -16,4 +16,15 @@ create your own personal API tokens
 -- setup webhook in github first, which is available in settings
    URL: set the url of jenkins which will be something like given bellow:
       http://jenkin-server-ip:<port>/github-webhook/
+
+## Step-2
+Let's do the necessary setup required in the Jenkins
+
+First setup the git credentials as mentioned above. To be done in >> settings > global. We can also test if the connection is ok or now prior to heading to jenkins job setup.
+
+Check the image for the normal setup done.
+1. Added the giturl 
+2. Checked the option ##### GitHub hook trigger for GITScm polling
+
+
 
