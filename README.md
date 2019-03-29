@@ -29,10 +29,14 @@ Check the image for the normal setup done.
 ## Some important variables to access from jenkins
 Once the hook start working than we can start accessing so many cool variables directly from the jenkins environment. Few of my favorites being.
 
-**GIT_COMMITTER_NAME:** To know who made the commit 
+**GIT_COMMITTER_NAME:** To know who made the commit but this doesnot work in jenkins
 
 **GIT_COMMIT:** To know what was the exact commit being made
 
 ## Getting some more details from the github Payload
 
-If you are using the bitbucket as the code repository you can directly access the $BITBUCKET_PAYLOAD variable which contains the payload result. Parse the json to get whatever value required in jenkins
+
+## To get who made the commiter details in bash
+
+` git show -s --format='%ce','%cn','%H' `
+
