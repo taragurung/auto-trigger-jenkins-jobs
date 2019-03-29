@@ -40,3 +40,5 @@ Once the hook start working than we can start accessing so many cool variables d
 
 ` git show -s --format='%ce','%cn','%H' `
 
+This will privide us commiter email, name and the commit-id
+
