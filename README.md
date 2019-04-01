@@ -38,7 +38,7 @@ Once the hook start working than we can start accessing so many cool variables d
 
 ## To get who made the commiter details in bash
 
-` git show -s --format='%ce','%cn','%H' `
+` commiter_user=$(git --no-pager show -s --format='%an <%ae>') `
 
-This will privide us commiter email, name and the commit-id
+This will privide us commiter name and email
 
