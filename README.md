@@ -38,7 +38,28 @@ Once the hook start working than we can start accessing so many cool variables d
 
 ## To get who made the commiter details in bash
 
-` commiter_user=$(git --no-pager show -s --format='%an <%ae>') `
+`
+if [[ $BUILD_USER == "SCMTrigger" ]]; then
 
-This will privide us commiter name and email
+   triggered_by=$(git show -s --format='%cn')
+   #commiter_user=$(git --no-pager show -s --format='%an <%ae>')
+   commiter_user=$(git --no-pager show -s --format='%an')
+   #commiter_email=$(git show -s --format='%ce')
+   commit_id=$(git show -s --format='%H')
+else
+   #commiter_user=$BUILD_USER #this doesnot give the git commit user
+   triggered_by=$BUILD_USER
+   commiter_user=$(git --no-pager show -s --format='%an')
+   commit_id=$GIT_COMMIT
+fi
 
+
+echo "//////////////////////////////////////"
+echo "Triggered By: $triggered_by"
+echo "Commited By: $commiter_user"
+echo "Commit ID: $commit_id"
+echo "//////////////////////////////////////"
+
+exit 1`
+
+The triggered User and the commit User is different. When jenkins triggers the jobs it will come Github but that does not mean the same user made the commit 
